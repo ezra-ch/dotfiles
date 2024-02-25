@@ -4,8 +4,12 @@
   <property name="panels" type="array">
     <value type="int" value="0"/>
     <value type="int" value="1"/>
+    <value type="int" value="2"/>
+    <value type="int" value="3"/>
+    <value type="int" value="4"/>
+    <value type="int" value="5"/>
     <property name="panel-0" type="empty">
-      <property name="position" type="string" value="p=0;x=1285;y=1412"/>
+      <property name="position" type="string" value="p=0;x=1301;y=1411"/>
       <property name="length" type="uint" value="76"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
@@ -45,7 +49,7 @@
     </property>
     <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=0;x=1283;y=25"/>
+      <property name="position" type="string" value="p=0;x=1281;y=24"/>
       <property name="size" type="uint" value="25"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="mode" type="uint" value="0"/>
@@ -91,12 +95,67 @@
         <value type="double" value="0.113725"/>
         <value type="double" value="0.725490"/>
         <value type="double" value="0.329412"/>
-        <value type="double" value="1.000000"/>
+        <value type="double" value="0.916107"/>
       </property>
       <property name="length" type="uint" value="95"/>
       <property name="length-adjust" type="bool" value="false"/>
-      <property name="leave-opacity" type="uint" value="88"/>
-      <property name="enter-opacity" type="uint" value="88"/>
+      <property name="leave-opacity" type="uint" value="86"/>
+      <property name="enter-opacity" type="uint" value="86"/>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="position" type="string" value="p=11;x=1252;y=25"/>
+      <property name="size" type="uint" value="48"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.750000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.000000"/>
+      </property>
+      <property name="leave-opacity" type="uint" value="0"/>
+      <property name="enter-opacity" type="uint" value="0"/>
+    </property>
+    <property name="panel-3" type="empty">
+      <property name="position" type="string" value="p=8;x=128;y=1415"/>
+      <property name="size" type="uint" value="60"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.750000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.000000"/>
+      </property>
+    </property>
+    <property name="panel-4" type="empty">
+      <property name="position" type="string" value="p=5;x=25;y=880"/>
+      <property name="size" type="uint" value="16"/>
+      <property name="mode" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.750000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.000000"/>
+      </property>
+      <property name="position-locked" type="bool" value="true"/>
+    </property>
+    <property name="panel-5" type="empty">
+      <property name="position" type="string" value="p=1;x=2432;y=839"/>
+      <property name="size" type="uint" value="16"/>
+      <property name="mode" type="uint" value="1"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.750000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.000000"/>
+      </property>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -127,6 +186,7 @@
       <property name="known-items" type="array">
         <value type="string" value="obs"/>
         <value type="string" value="spotify-client"/>
+        <value type="string" value="flameshot"/>
         <value type="string" value="openrgb"/>
         <value type="string" value="TelegramDesktop"/>
         <value type="string" value="steam"/>
@@ -136,6 +196,7 @@
         <value type="string" value="nm-applet"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="flameshot"/>
         <value type="string" value="bluetooth enabled"/>
         <value type="string" value="network"/>
         <value type="string" value="steam"/>
@@ -147,6 +208,7 @@
       <property name="single-row" type="bool" value="false"/>
       <property name="hidden-legacy-items" type="array">
       </property>
+      <property name="hide-new-items" type="bool" value="false"/>
     </property>
     <property name="plugin-6" type="string" value="notification-plugin"/>
     <property name="plugin-7" type="string" value="indicator">
@@ -157,6 +219,9 @@
       <property name="known-indicators" type="array">
         <value type="string" value="libayatana-application.so"/>
       </property>
+      <property name="align-left" type="bool" value="true"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="mode-whitelist" type="bool" value="false"/>
     </property>
     <property name="plugin-8" type="string" value="power-manager-plugin"/>
     <property name="plugin-9" type="string" value="pulseaudio">
@@ -164,7 +229,7 @@
       <property name="enable-mpris" type="bool" value="true"/>
       <property name="enable-wnck" type="bool" value="true"/>
       <property name="mixer-command" type="string" value="pavucontrol"/>
-      <property name="mpris-players" type="string" value="chromium.instance15827;chromium.instance1790593;chromium.instance2135289;chromium.instance2143944;chromium.instance2241;chromium.instance2535;chromium.instance3044767;chromium.instance315560;chromium.instance3404088;chromium.instance3544718;chromium.instance354970;chromium.instance3602741;chromium.instance43571;chromium.instance599541;chromium.instance754182;chromium.instance84813;chromium.instance908620;chromium.instance987188;chromium.instance995637;parole;rhythmbox;spotify"/>
+      <property name="mpris-players" type="string" value="chromium.instance1066122;chromium.instance1375510;chromium.instance1447924;chromium.instance1571282;chromium.instance15827;chromium.instance1790593;chromium.instance2135289;chromium.instance2143944;chromium.instance2241;chromium.instance2307665;chromium.instance2535;chromium.instance3044767;chromium.instance315560;chromium.instance3404088;chromium.instance3544718;chromium.instance354970;chromium.instance3602741;chromium.instance43571;chromium.instance555240;chromium.instance599541;chromium.instance754182;chromium.instance84813;chromium.instance908620;chromium.instance987188;chromium.instance995637;parole;rhythmbox;spotify"/>
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-10" type="string" value="clock">
