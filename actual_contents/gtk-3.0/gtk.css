@@ -1,6 +1,7 @@
-.xfce4-panel {
+.xfce4-panel{
   border: none;
   border-radius: 13px;
+  color: #000000;
 }
 
 @keyframes fadeIn {
@@ -23,6 +24,7 @@
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
+.genmon_valuebutton,
 #xfce4-power-manager-plugin,
 #xfce4-notification-plugin,
 #pulseaudio-button,
@@ -31,6 +33,7 @@
 #sn-button,
 #showdesktop-button {
   background-color: rgba(255, 255, 255, 0);
+  color: #000000;
   margin: 0.22em;
   padding: 0.2em;
   border-radius: 0.5em;
@@ -38,6 +41,7 @@
 }
 
 /* Hover effect */
+.genmon_valuebutton:hover,
 #xfce4-power-manager-plugin:hover,
 #xfce4-notification-plugin:hover,
 #pulseaudio-button:hover,
@@ -57,29 +61,56 @@
   animation: fadeIn 0.3s ease;
 }
 
+
 /* task list aka window button */
+
 .xfce4-panel.background .tasklist button {
   background-color: rgba(255, 255, 255, 0);
-  margin-left: 0.1em;
-  margin-right: 0.1em;
-  color: shade(#fffff, 0.2);
+  margin-left: 0.12em;
+  margin-right: 0.12em;
+  color: #000000;
+  font-family: 'JetBrainsMonoNL Nerd Font Propo'; 
+  font-weight:300;
+  font-size: 14;
   border-radius: 0.3em;
   transition: background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1), color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+/*topbar font*/
+#clock-button{
+  font-family: 'JetBrainsMonoNL Nerd Font Propo'; 
+  font-size: 14;
+}
+
+
 /* hover */
 .xfce4-panel.background .tasklist button:hover {
   background-color: rgba(255, 255, 255, 0.25);
-  color: #000000;
+  color: shade(#fffff, 0.2);
   animation: fadeInHover 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* active or checked */
-.xfce4-panel.background .tasklist button:active,
+
+/*color*/
+.xfce4-panel.background .tasklist button:active{
+  color: rgba(79, 103, 134, 0.8);
+  transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
 .xfce4-panel.background .tasklist button:checked {
   color: #fff;
+  transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.xfce4-panel.background .tasklist button:active {
   border-bottom-style: solid;
-  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(255, 255, 255, 1);
+  border-bottom-width: .2em;
+  border-radius: 0.3em;
+  transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.xfce4-panel.background .tasklist button:checked {
+  margin-bottom: 0.2em;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 1);
   border-bottom-width: .2em;
   border-radius: 0.3em;
   transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1);
@@ -87,10 +118,15 @@
 
 @keyframes fadeInHover {
   from {
-    opacity: 0;
+    opacity: 0.25;
   }
   to {
     opacity: 1;
   }
+}
+
+/*disabletooltip on panel*/
+tooltip{
+  opacity: 0;
 }
 
