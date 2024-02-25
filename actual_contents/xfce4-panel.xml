@@ -58,6 +58,7 @@
         <value type="int" value="41"/>
         <value type="int" value="15"/>
         <value type="int" value="31"/>
+        <value type="int" value="52"/>
         <value type="int" value="29"/>
         <value type="int" value="36"/>
         <value type="int" value="43"/>
@@ -216,7 +217,7 @@
       <property name="enable-mpris" type="bool" value="true"/>
       <property name="enable-wnck" type="bool" value="true"/>
       <property name="mixer-command" type="string" value="pavucontrol"/>
-      <property name="mpris-players" type="string" value="chromium.instance1066122;chromium.instance1294514;chromium.instance1375510;chromium.instance1447924;chromium.instance1571282;chromium.instance15827;chromium.instance1790593;chromium.instance2135289;chromium.instance2143944;chromium.instance2241;chromium.instance2307665;chromium.instance2535;chromium.instance3044767;chromium.instance315560;chromium.instance3404088;chromium.instance3544718;chromium.instance354970;chromium.instance3602741;chromium.instance43571;chromium.instance555240;chromium.instance599541;chromium.instance754182;chromium.instance84813;chromium.instance908620;chromium.instance987188;chromium.instance995637;parole;rhythmbox;spotify"/>
+      <property name="mpris-players" type="string" value="chromium.instance1066122;chromium.instance1294514;chromium.instance1375510;chromium.instance1447924;chromium.instance1571282;chromium.instance15827;chromium.instance1790593;chromium.instance1902748;chromium.instance2135289;chromium.instance2143944;chromium.instance2209133;chromium.instance2241;chromium.instance2307665;chromium.instance2339080;chromium.instance2535;chromium.instance3044767;chromium.instance315560;chromium.instance3404088;chromium.instance3544718;chromium.instance354970;chromium.instance3602741;chromium.instance43571;chromium.instance555240;chromium.instance599541;chromium.instance754182;chromium.instance84813;chromium.instance908620;chromium.instance987188;chromium.instance995637;parole;rhythmbox;spotify"/>
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-10" type="string" value="clock">
@@ -347,6 +348,11 @@
     </property>
     <property name="plugin-51" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-52" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="numbering" type="bool" value="false"/>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>
