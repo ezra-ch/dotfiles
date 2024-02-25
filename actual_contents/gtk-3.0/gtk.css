@@ -56,3 +56,28 @@
   color: #000000;
   animation: fadeIn 0.3s ease;
 }
+
+/* task list aka window button*/
+.xfce4-panel.background .tasklist button { 
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  color: shade(#fffff, 0.2);
+  border-radius:0.3em;
+}
+/* hover */
+.xfce4-panel.background .tasklist button:hover{
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #000000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* hover */
+.xfce4-panel.background .tasklist button:active, 
+.xfce4-panel.background .tasklist button:checked {
+  color: #fff;
+  border-bottom-style: solid; 
+  border-bottom-color: rgba(255, 255, 255, 0.3); 
+  border-bottom-width: .2em;
+  border-radius:0.3em;
+}
